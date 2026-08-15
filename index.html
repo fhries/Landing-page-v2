@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>NexaLink - Link Directory Modern</title>
+    <meta name="description" content="Kumpulan link penting dengan desain modern. Akses cepat ke semua website favoritmu dalam satu tempat.">
+    <meta name="keywords" content="link directory, landing page, bookmarks, modern ui">
+    <meta name="author" content="NexaLink">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexalink.vercel.app/">
+    <meta property="og:title" content="NexaLink - Link Directory Modern">
+    <meta property="og:description" content="Kumpulan link penting dengan desain modern. Akses cepat ke semua website favoritmu.">
+    <meta property="og:image" content="https://nexalink.vercel.app/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nexalink.vercel.app/">
+    <meta property="twitter:title" content="NexaLink - Link Directory Modern">
+    <meta property="twitter:description" content="Kumpulan link penting dengan desain modern. Akses cepat ke semua website favoritmu.">
+    <meta property="twitter:image" content="https://nexalink.vercel.app/assets/og-image.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0f0f1a">
+    <meta name="msapplication-TileColor" content="#0f0f1a">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="NexaLink Home">
+                <div class="logo-icon">
+                    <i class="fas fa-bolt" aria-hidden="true"></i>
+                </div>
+                <span class="logo-text">NexaLink</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link active" role="menuitem">Beranda</a></li>
+                <li role="none"><a href="#links" class="nav-link" role="menuitem">Links</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">Tentang</a></li>
+                <li role="none"><a href="admin.html" class="nav-link admin-link" role="menuitem">
+                    <i class="fas fa-lock" aria-hidden="true"></i> Admin
+                </a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Hero section">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-up">
+                <i class="fas fa-sparkles" aria-hidden="true"></i>
+                <span>Link Directory Modern</span>
+            </div>
+
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                Semua Link <span class="gradient-text">Favoritmu</span><br>
+                dalam Satu Tempat
+            </h1>
+
+            <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+                Kumpulan link penting yang terorganisir dengan desain modern. 
+                Klik dan langsung menuju tujuanmu.
+            </p>
+
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                <a href="#links" class="hero-btn primary">
+                    <span>Lihat Semua Link</span>
+                    <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                </a>
+                <a href="admin.html" class="hero-btn secondary">
+                    <i class="fas fa-cog" aria-hidden="true"></i>
+                    <span>Kelola Links</span>
+                </a>
+            </div>
+
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <span class="stat-number" id="link-count">0</span>
+                    <span class="stat-label">Links</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Gratis</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">0ms</span>
+                    <span class="stat-label">Loading</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links" class="links-section" aria-label="Links section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DIRECT LINKS</span>
+                <h2 class="section-title">Link <span class="gradient-text">Tersedia</span></h2>
+                <p class="section-desc">Klik tombol di bawah untuk langsung menuju website tujuan</p>
+            </div>
+
+            <div id="links-grid" class="links-grid" role="list">
+                <!-- Links rendered by JS -->
+            </div>
+
+            <div id="empty-state" class="empty-state" style="display:none;">
+                <div class="empty-icon">
+                    <i class="fas fa-link-slash" aria-hidden="true"></i>
+                </div>
+                <h3>Belum ada link</h3>
+                <p>Tambahkan link pertama melalui panel admin</p>
+                <a href="admin.html" class="btn-primary">
+                    <i class="fas fa-plus" aria-hidden="true"></i>
+                    Tambah Link
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" aria-label="About section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">MENGAPA KAMI</span>
+                <h2 class="section-title">Fitur <span class="gradient-text">Unggulan</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <article class="about-card" data-aos="fade-up">
+                    <div class="about-icon-wrapper">
+                        <div class="about-icon">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <h3>Cepat</h3>
+                    <p>Akses langsung tanpa loading berlebihan. Satu klik langsung sampai tujuan.</p>
+                </article>
+
+                <article class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-icon-wrapper">
+                        <div class="about-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <h3>Aman</h3>
+                    <p>Panel admin dilindungi dengan password terenkripsi SHA-256.</p>
+                </article>
+
+                <article class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-icon-wrapper">
+                        <div class="about-icon">
+                            <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <h3>Modern</h3>
+                    <p>Desain glassmorphism dengan animasi smooth dan responsif di semua device.</p>
+                </article>
+
+                <article class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-icon-wrapper">
+                        <div class="about-icon">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <h3>Responsif</h3>
+                    <p>Tampilan optimal di desktop, tablet, maupun smartphone.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" aria-label="Call to action">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Siap mengelola link-mu?</h2>
+                    <p>Masuk ke panel admin untuk menambah, mengedit, dan menghapus link.</p>
+                </div>
+                <a href="admin.html" class="cta-btn">
+                    <i class="fas fa-lock" aria-hidden="true"></i>
+                    <span>Buka Admin Panel</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-icon">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <span class="logo-text">NexaLink</span>
+                </div>
+                <p class="footer-copy">
+                    Landing Page dengan Admin Panel &middot; Dibuat dengan 
+                    <span class="heart" aria-label="love">❤️</span>
+                </p>
+                <div class="footer-links">
+                    <a href="/" class="footer-link">Beranda</a>
+                    <span class="footer-dot">&middot;</span>
+                    <a href="admin.html" class="footer-link">Admin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
